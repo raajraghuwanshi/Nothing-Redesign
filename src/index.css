@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+
+@layer utilities {
+  @keyframes infiniteScroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-infinite-scroll {
+    animation: infiniteScroll 10s linear infinite;
+  }
+}
+
+@font-face {  
+  font-family: "MyFont";
+  src: url("/src/assets/Myfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ✅ Custom utility class to use the font */
+.font-myfont {
+  font-family: "MyFont", sans-serif;
+}
