@@ -68,8 +68,8 @@ const App = () => {
       color: "#ffffff",
       scrollTrigger: {
         trigger: thirdRef.current,
-        start: "top top",
-        end: "bottom top",
+        start: "bottom top+=50",
+        end: "bottom top-=50",
         scrub: true,
 
       }
